@@ -1,0 +1,1519 @@
+Sun Mar  9 23:18:49 CST 2014
+
+
+Build V8 !  You must do this if it is your first time to build V8: 'sudo apt-get install gperf bison flex perl'.
+set UCMobile_NeedsClean to 0 as not defined yet
+switch to ac
+
+################################
+# Update the manifest file...  #
+################################
+
+Will roll back the package name if it has been changed.
+
+###########################
+# Generate the R.java...  #
+###########################
+
+Updated local.properties
+No project name specified, using Activity name 'UCMobile'.
+If you wish to change it, edit the first line of build.xml.
+Added file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+Buildfile: /home/uc/work/9.7.0/BrowserShell/platform/android/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21
+ [checkenv] Installed at /opt/android-sdk-linux
+
+-setup:
+     [echo] Project Name: UCMobile
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/uc/work/9.7.0/BrowserShell/platform/android/bin
+   [delete] Deleting directory /home/uc/work/9.7.0/BrowserShell/platform/android/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+targetSdkVersion is android-8
+
+##############################
+# Move R to com.UCMobile...  #
+##############################
+
+
+###############
+# Pack done.  #
+###############
+
+Sun Mar  9 23:18:51 CST 2014
+TJPDEBUG start buildshell
+Sun Mar  9 23:18:51 CST 2014
+build core  parameters UCMobile_ARCH:  UCMobile_AC: 1 UCMobile_Arm7: 0
+set Webcore_Export_Flag to 1 as not defined yet
+set UCMobile_EnablePrelink to 0 as not defined yet
+SHELL_SO_FILE: libs/armeabi/libBrowserShell_UC.so
+CORE_SO_FILE: libs/armeabi/libWebCore_UC.so
+WEBCORE_PATH: ../../../core/WebKit/android/java
+DEPEND_PATH: /home/uc/work/9.7.0/BrowserShell/platform/android/../../../project_files/android/depends/lib
+Sun Mar  9 23:18:51 CST 2014
+
+###############################
+# Start Copying resources...  #
+###############################
+
+Can't stat /home/uc/work/9.7.0/BrowserShell/platform/android/resources/../assets/UCMobile: No such file or directory
+ at copy_android.pl line 37
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/history/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/searchbar/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/searchbar/480x800'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/searchbar/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/init/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/init/480x800'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/init/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/titlebar/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/titlebar/480x800'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/titlebar/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/webwindow/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/cn/smartreader/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/homepage/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/certificates/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/thirdpartycode/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/plugin/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/res/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/homepage/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/msgcenter/.svn'
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/help/about.htm to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/help/zh-cn failed: No such file or directory
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/traffic/images/.svn'
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/danger.xhtml to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/safe.xhtml to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/unknowned.xhtml to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/css.css to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/appcenter/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/../inter/zh-cn/addonres/.svn'
+~~~~~~~~~~~~inland~~~~~~~~~~~~~
+/home/uc/work/9.7.0/BrowserShell/platform/android/
+usage: ResourcesParser [--verbose] [--inter] [--language ...]
+	--verbose  print more message.
+	--with-check check duplicate file and something else.
+	--inter    copy strings for international version. default is copy Chinese strings only.
+	--language ... copy the resources of which language.
+Process resources successful!
+resource path is:/home/uc/work/9.7.0/BrowserShell/platform/android/resources/strings
+java.io.FileNotFoundException: /home/uc/work/9.7.0/BrowserShell/platform/android/resources/strings/zh-cn/.svn (Is a directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.uc.browser.resource.parse.StringArrayParser.parse(StringArrayParser.java:30)
+	at com.uc.browser.resource.parse.LanguageResource.buildResource(LanguageResource.java:59)
+	at com.uc.browser.resource.parse.ResourcePackager.parseDir(ResourcePackager.java:188)
+	at com.uc.browser.resource.parse.ResourcePackager.packageResource(ResourcePackager.java:256)
+	at com.uc.UCResourceCompiler.main(UCResourceCompiler.java:123)
+java.io.FileNotFoundException: /home/uc/work/9.7.0/BrowserShell/platform/android/resources/strings/zh-cn/.svn (Is a directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.uc.browser.resource.parse.StringParser.parse(StringParser.java:37)
+	at com.uc.browser.resource.parse.LanguageResource.buildResource(LanguageResource.java:60)
+	at com.uc.browser.resource.parse.ResourcePackager.parseDir(ResourcePackager.java:188)
+	at com.uc.browser.resource.parse.ResourcePackager.packageResource(ResourcePackager.java:256)
+	at com.uc.UCResourceCompiler.main(UCResourceCompiler.java:123)
+打包结束
+
+###############################
+#  Finish Copying resources.  #
+###############################
+
+
+#############################################
+# Start building BrowserShell source code.  #
+#############################################
+
+UCMobile_ARCH != x86
+%%%% ndk-build options: NDK_DEBUG=0 -j9 %%%%
+Compile++ thumb  : BrowserShell_UC <= FileHandler.cpp
+Compile++ thumb  : BrowserShell_UC <= MobileFun.cpp
+Compile++ thumb  : BrowserShell_UC <= SystemInfo.cpp
+Compile++ thumb  : BrowserShell_UC <= ShellPathManager.cpp
+Compile++ thumb  : BrowserShell_UC <= SettingManager.cpp
+Compile++ thumb  : BrowserShell_UC <= ResDataManager.cpp
+Compile++ thumb  : BrowserShell_UC <= JNI_Register.cpp
+Compile++ thumb  : BrowserShell_UC <= ServiceBridge.cpp
+Compile++ thumb  : BrowserShell_UC <= SlAdBridge.cpp
+Compile++ thumb  : BrowserShell_UC <= SystemHelperBridge.cpp
+Compile++ thumb  : BrowserShell_UC <= UnexpectedStopManager.cpp
+Compile++ thumb  : BrowserShell_UC <= ResHelperBridge.cpp
+Compile++ thumb  : BrowserShell_UC <= BookmarkFileRW.cpp
+Compile++ thumb  : BrowserShell_UC <= BookmarkModel.cpp
+Compile++ thumb  : BrowserShell_UC <= BookmarkManager.cpp
+Compile++ thumb  : BrowserShell_UC <= DownloadManager.cpp
+Compile++ thumb  : BrowserShell_UC <= DownloadTask.cpp
+Compile++ thumb  : BrowserShell_UC <= QuietDownloadService.cpp
+Compile++ thumb  : BrowserShell_UC <= AppManagerModel.cpp
+Compile++ thumb  : BrowserShell_UC <= AppDownloadManager.cpp
+Compile++ thumb  : BrowserShell_UC <= BcMsgModel.cpp
+Compile++ thumb  : BrowserShell_UC <= PbDataParser.cpp
+Compile++ thumb  : BrowserShell_UC <= DispatcherService.cpp
+Compile++ thumb  : BrowserShell_UC <= CheckNetworkService.cpp
+Compile++ thumb  : BrowserShell_UC <= InitController.cpp
+Compile++ thumb  : BrowserShell_UC <= PushServiceServerManager.cpp
+Compile++ thumb  : BrowserShell_UC <= DownloadSafeService.cpp
+Compile++ thumb  : BrowserShell_UC <= StatsService.cpp
+Compile++ thumb  : BrowserShell_UC <= UpgradeService.cpp
+Compile++ thumb  : BrowserShell_UC <= UpgradeDownloadManager.cpp
+Compile++ thumb  : BrowserShell_UC <= USCmdController.cpp
+Compile++ thumb  : BrowserShell_UC <= UsDataInfo.cpp
+Compile++ thumb  : BrowserShell_UC <= UcParamInfoMgr.cpp
+Compile++ thumb  : BrowserShell_UC <= HistoryManager.cpp
+Compile++ thumb  : BrowserShell_UC <= ShellPluginData.cpp
+Compile++ thumb  : BrowserShell_UC <= SuperSearchModel.cpp
+Compile++ thumb  : BrowserShell_UC <= HotWordsManager.cpp
+Compile++ thumb  : BrowserShell_UC <= SmartUriData.cpp
+Compile++ thumb  : BrowserShell_UC <= SmartUriModel.cpp
+Compile++ thumb  : BrowserShell_UC <= InputHistoryModel.cpp
+Compile++ thumb  : BrowserShell_UC <= SplashDataManager.cpp
+Compile++ thumb  : BrowserShell_UC <= SkinWallpaperPushManager.cpp
+Compile++ thumb  : BrowserShell_UC <= UcDebug.cpp
+Compile++ thumb  : BrowserShell_UC <= UcPbReqOutputStream.cpp
+Compile++ thumb  : BrowserShell_UC <= UcDownloadDefs.cpp
+Compile++ thumb  : BrowserShell_UC <= UcDownloadService.cpp
+Compile++ thumb  : BrowserShell_UC <= UcDownloadTask.cpp
+Compile++ thumb  : BrowserShell_UC <= UcDownloadWorker.cpp
+Compile++ thumb  : BrowserShell_UC <= UcDownloadSegmentation.cpp
+/home/uc/work/9.7.0/BrowserShell/jni/service/download/UcDownloadService.cpp: In member function 'virtual UC_BOOL UcDownloadService_c::handleAction(const UC_CHAR*)':
+/home/uc/work/9.7.0/BrowserShell/jni/service/download/UcDownloadService.cpp:102: warning: NULL used in arithmetic
+SharedLibrary  : libBrowserShell_UC.so
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(zipfile.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(deltafile.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(LocalCodec.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(mergewriter.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(md5c.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(zipentry.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(bzlib.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(crctable.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(randtable.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(compress.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(decompress.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(blocksort.o): Unknown EABI object attribute 44
+/opt/android-ndk-r8/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.4.3/../../../../arm-linux-androideabi/bin/ld: Warning: /home/uc/work/9.7.0/project_files/android/depends/lib/arm/libdelta.a(huffman.o): Unknown EABI object attribute 44
+Install        : libBrowserShell_UC.so => libs/armeabi/libBrowserShell_UC.so
+
+real	0m17.274s
+user	1m29.266s
+sys	0m4.188s
+
+####################################
+# BrowserShell source code built.  #
+####################################
+
+Sun Mar  9 23:19:11 CST 2014
+TJPDEBUG end buildshell
+Sun Mar  9 23:19:11 CST 2014
+
+####################################
+# BrowserShell compile OK!         #
+####################################
+
+Sun Mar  9 23:19:11 CST 2014
+./build_scripts/packapk.sh: line 235: ./build_scripts/downloadLib.sh: Permission denied
+rm: cannot remove `libs/armeabi/libWebCore_UC.so': No such file or directory
+TJPDEBUG start buildcore
+Sun Mar  9 23:19:11 CST 2014
+build core  parameters UCMobile_ARCH:  UCMobile_AC: 1 UCMobile_Arm7: 0
+set Webcore_Export_Flag to 1 as not defined yet
+set UCMobile_EnablePrelink to 0 as not defined yet
+CORE_SO_FILE: libs/armeabi/libWebCore_UC.so
+CORE_SO_FILE_FULL: obj/local/armeabi/libWebCore_UC.so
+DEPEND_PATH: /home/uc/work/9.7.0/BrowserShell/platform/android/../../../project_files/android/depends/lib/arm
+Makefile_PATH: /home/uc/work/9.7.0/BrowserShell/platform/android/../../../core/core_project_files/android
+PRELINK_CORE_SO_FILE: libs/armeabi/libWebCore_UC_prelink.so
+
+#############################################################################
+#              Start building WebCore C++ source code.                      #
+#############################################################################
+
+Sun Mar  9 23:19:11 CST 2014
+TJPDEBUG start build v8
+Sun Mar  9 23:19:11 CST 2014
+%%%% JavaScript Engine: V8 %%%%
+make[1]: Entering directory `/home/uc/work/9.7.0/core/v8'
+make[2]: Entering directory `/home/uc/work/9.7.0/core/v8/out'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/uc/work/9.7.0/core/v8/out'
+make[1]: Leaving directory `/home/uc/work/9.7.0/core/v8'
+make: Nothing to be done for `gen'.
+TJPDEBUG end build v8
+Sun Mar  9 23:19:12 CST 2014
+%%%% ndk-build options: NDK_DEBUG=0 -j9 %%%%
+TJPDEBUG start compile core
+Sun Mar  9 23:19:12 CST 2014
+Prebuilt       : libv8_base.a <= /home/uc/work/9.7.0/core/v8/out/
+Prebuilt       : libv8_snapshot.a <= /home/uc/work/9.7.0/core/v8/out/
+SharedLibrary  : libandroid_uc_40.so
+SharedLibrary  : libandroid_uc_41.so
+SharedLibrary  : libandroid_uc_42.so
+SharedLibrary  : libandroid_uc_43.so
+SharedLibrary  : libandroid_uc_44.so
+Install        : libandroid_uc_44.so => libs/armeabi/libandroid_uc_44.so
+Install        : libandroid_uc_40.so => libs/armeabi/libandroid_uc_40.so
+Install        : libandroid_uc_41.so => libs/armeabi/libandroid_uc_41.so
+Install        : libandroid_uc_42.so => libs/armeabi/libandroid_uc_42.so
+Install        : libandroid_uc_43.so => libs/armeabi/libandroid_uc_43.so
+SharedLibrary  : libWebCore_UC.so
+Install        : libWebCore_UC.so => libs/armeabi/libWebCore_UC.so
+
+real	0m36.407s
+user	0m34.582s
+sys	0m1.604s
+TJPDEBUG end compile core
+Sun Mar  9 23:19:49 CST 2014
+
+#############################################################################
+#                  WebCore C++ source code built.                           #
+#############################################################################
+
+Sun Mar  9 23:19:49 CST 2014
+
+#############################################################################
+#                     Generating jar for WebKit...                          #
+#############################################################################
+
+Updated local.properties
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+`ant.properties' -> `ant_properties'
+Buildfile: /home/uc/work/9.7.0/core/WebKit/android/ac/java/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21
+ [checkenv] Installed at /opt/android-sdk-linux
+
+-setup:
+     [echo] Project Name: TestActivity
+  [gettype] Project Type: Self-Tested Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin
+   [delete] Deleting directory /home/uc/work/9.7.0/core/WebKit/android/ac/java/gen
+[getlibpath] Library dependencies:
+[getlibpath] No Libraries
+   [subant] No sub-builds to iterate on
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /home/uc/work/9.7.0/core/WebKit/android/ac/java/build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21
+ [checkenv] Installed at /opt/android-sdk-linux
+
+-setup:
+     [echo] Project Name: TestActivity
+  [gettype] Project Type: Self-Tested Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-build-setup:
+     [echo] Resolving Build Target for TestActivity...
+[gettarget] Project Target:   Android 4.0
+[gettarget] API level:        14
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin
+    [mkdir] Created dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res
+    [mkdir] Created dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/gen
+    [mkdir] Created dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/classes
+    [mkdir] Created dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for TestActivity...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-pre-build:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 388 source files to /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+-post-compile:
+     [echo] Create webkit core jar!
+      [jar] Building jar: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/core.jar
+
+-obfuscate:
+
+-dex:
+      [dex] input: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/classes
+      [dex] input: /opt/android-sdk-linux/tools/support/annotations.jar
+      [dex] Pre-Dexing /opt/android-sdk-linux/tools/support/annotations.jar -> annotations-57bcb942842df78922f5cd056349eee7.jar
+      [dex] Converting compiled files and external libraries into /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/classes.dex...
+       [dx] Merged dex A (843 defs/1570.0KiB) with dex B (2 defs/1.1KiB). Result is 845 defs/1932.6KiB. Took 0.4s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res
+   [crunch] To destination dir: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/appnotification_icon.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/appnotification_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/appnotification_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/av_full_screen.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/av_full_screen.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/av_full_screen.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/bcmsg.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/bcmsg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/bcmsg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/btn_media_player.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/btn_media_player_disabled.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_disabled.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/btn_media_player_disabled_selected.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_disabled_selected.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_disabled_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/btn_media_player_pressed.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_pressed.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/btn_media_player_selected.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_selected.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/btn_media_player_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/call_master.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/call_master.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/call_master.png: 87% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_cancel_default.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_cancel_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_cancel_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_cancel_pressed.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_cancel_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_cancel_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_capture_default.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_capture_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_capture_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_capture_pressed.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_capture_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_capture_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_confirm_default.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_confirm_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_confirm_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_confirm_pressed.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_confirm_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_confirm_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_crop_height.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_crop_height.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_crop_height.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/camera_crop_width.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_crop_width.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/camera_crop_width.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/content_new.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/content_new.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/content_new.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/content_remove.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/content_remove.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/content_remove.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/danxuan_nor.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/danxuan_nor.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/danxuan_nor.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/danxuan_select.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/danxuan_select.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/danxuan_select.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/default_video_poster.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/default_video_poster.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/default_video_poster.png: 76% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/dialog_btn.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/dialog_btn.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/dialog_btn.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/dialog_btn_pressed.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/dialog_btn_pressed.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/dialog_btn_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/download_notification_icon.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/download_notification_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/download_notification_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/flyer_open_background.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/flyer_open_background.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/flyer_open_background.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/freecopy_border_below.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/freecopy_border_below.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/freecopy_border_below.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/freecopy_border_left.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/freecopy_border_left.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/freecopy_border_left.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/freecopy_border_right.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/freecopy_border_right.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/freecopy_border_right.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_btn_close_panel.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_btn_close_panel.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_btn_close_panel.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_btn_find_next.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_btn_find_next.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_btn_find_next.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_btn_find_prev.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_btn_find_prev.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_btn_find_prev.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_media_ff.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_ff.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_ff.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_media_fullscreen.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_fullscreen.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_fullscreen.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_media_pause.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_pause.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_pause.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_media_play.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_play.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_play.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/ic_media_rew.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_rew.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/ic_media_rew.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/icon.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/icon.png: 67% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/license_check.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/license_check.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/license_check.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/license_uncheck.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/license_uncheck.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/license_uncheck.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/magnifier.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/magnifier.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/magnifier.png: 94% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/magnifier_mask.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/magnifier_mask.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/magnifier_mask.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/mc_background.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/mc_background.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/mc_background.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/navigation_back.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/navigation_back.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/navigation_back.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/navigation_forward.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/navigation_forward.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/navigation_forward.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/navigation_refresh.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/navigation_refresh.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/navigation_refresh.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/resolution_indicator.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/resolution_indicator.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/resolution_indicator.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/scrollbar_handle_accelerated_anim2.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/scrollbar_handle_accelerated_anim2.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/scrollbar_handle_accelerated_anim2.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-hdpi/web_site.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/web_site.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-hdpi/web_site.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/btn_media_player.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/btn_media_player_disabled.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_disabled.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_disabled.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/btn_media_player_disabled_selected.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_disabled_selected.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_disabled_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/btn_media_player_pressed.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_pressed.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/btn_media_player_selected.9.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_selected.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/btn_media_player_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/ic_media_pause.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/ic_media_pause.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/ic_media_pause.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/core/WebKit/android/ac/java/res/drawable-mdpi/ic_media_play.png => /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/ic_media_play.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/res/drawable-mdpi/ic_media_play.png: 0% size of source)
+   [crunch] Crunched 56 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+     [aapt] Warning: AndroidManifest.xml already defines debuggable (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating TestActivity-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/TestActivity-debug.apk
+[propertyfile] Creating new property file: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/build.prop
+[propertyfile] Updating property file: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/build.prop
+[propertyfile] Updating property file: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/build.prop
+[propertyfile] Updating property file: /home/uc/work/9.7.0/core/WebKit/android/ac/java/bin/build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 16 seconds
+`bin/core.jar' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/core.jar'
+`ant_properties' -> `ant.properties'
+
+#############################################################################
+#                   Finish build core.jar for WebKit !                      #
+#############################################################################
+
+####################################
+#              Prelink             #
+####################################
+`libs/armeabi/libWebCore_UC.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/armeabi/libWebCore_UC.so'
+`obj/local/armeabi/libWebCore_UC.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/obj/local/armeabi/libWebCore_UC.so'
+`libs/armeabi/libandroid_uc_40.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/armeabi/libandroid_uc_40.so'
+`libs/armeabi/libandroid_uc_41.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/armeabi/libandroid_uc_41.so'
+`libs/armeabi/libandroid_uc_42.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/armeabi/libandroid_uc_42.so'
+`libs/armeabi/libandroid_uc_43.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/armeabi/libandroid_uc_43.so'
+`libs/armeabi/libandroid_uc_44.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/libs/armeabi/libandroid_uc_44.so'
+`obj/local/armeabi/libandroid_uc_40.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/obj/local/armeabi/libandroid_uc_40.so'
+`obj/local/armeabi/libandroid_uc_41.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/obj/local/armeabi/libandroid_uc_41.so'
+`obj/local/armeabi/libandroid_uc_42.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/obj/local/armeabi/libandroid_uc_42.so'
+`obj/local/armeabi/libandroid_uc_43.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/obj/local/armeabi/libandroid_uc_43.so'
+`obj/local/armeabi/libandroid_uc_44.so' -> `/home/uc/work/9.7.0/BrowserShell/platform/android/obj/local/armeabi/libandroid_uc_44.so'
+TJPDEBUG end buildcore
+Sun Mar  9 23:20:06 CST 2014
+
+######################################
+# WebCore_UC compile or download OK! #
+######################################
+
+Sun Mar  9 23:20:06 CST 2014
+OS name: Linux
+project dir: /home/uc/work/9.7.0/BrowserShell/platform/android
+
+##########################################################################################
+#                            Creating UCMobile android project...                        #
+##########################################################################################
+
+Updated local.properties
+No project name specified, using Activity name 'UCMobile'.
+If you wish to change it, edit the first line of build.xml.
+Added file ./build.xml
+Updated file ./proguard-project.txt
+It seems that there are sub-projects. If you want to update them
+please use the --subprojects parameter.
+
+###############################
+# Start Copying resources...  #
+###############################
+
+Can't stat /home/uc/work/9.7.0/BrowserShell/platform/android/resources/../assets/UCMobile: No such file or directory
+ at copy_android.pl line 37
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/history/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/searchbar/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/searchbar/480x800'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/searchbar/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/init/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/init/480x800'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/init/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/titlebar/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/titlebar/480x800'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/titlebar/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/webwindow/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/cn/smartreader/480x800/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/homepage/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/certificates/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/thirdpartycode/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/plugin/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/res/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/homepage/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/msgcenter/.svn'
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/help/about.htm to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/help/zh-cn failed: No such file or directory
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/traffic/images/.svn'
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/danger.xhtml to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/safe.xhtml to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/unknowned.xhtml to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+copy /home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/downloadsafe/css.css to /home/uc/work/9.7.0/BrowserShell/platform/android/assets/UCMobile/downloadsafe/zh-cn failed: No such file or directory
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/zh-cn/appcenter/.svn'
+Skipping '/home/uc/work/9.7.0/BrowserShell/platform/android/resources/inter/../inter/zh-cn/addonres/.svn'
+~~~~~~~~~~~~inland~~~~~~~~~~~~~
+/home/uc/work/9.7.0/BrowserShell/platform/android/
+usage: ResourcesParser [--verbose] [--inter] [--language ...]
+	--verbose  print more message.
+	--with-check check duplicate file and something else.
+	--inter    copy strings for international version. default is copy Chinese strings only.
+	--language ... copy the resources of which language.
+Process resources successful!
+resource path is:/home/uc/work/9.7.0/BrowserShell/platform/android/resources/strings
+java.io.FileNotFoundException: /home/uc/work/9.7.0/BrowserShell/platform/android/resources/strings/zh-cn/.svn (Is a directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.uc.browser.resource.parse.StringArrayParser.parse(StringArrayParser.java:30)
+	at com.uc.browser.resource.parse.LanguageResource.buildResource(LanguageResource.java:59)
+	at com.uc.browser.resource.parse.ResourcePackager.parseDir(ResourcePackager.java:188)
+	at com.uc.browser.resource.parse.ResourcePackager.packageResource(ResourcePackager.java:256)
+	at com.uc.UCResourceCompiler.main(UCResourceCompiler.java:123)
+java.io.FileNotFoundException: /home/uc/work/9.7.0/BrowserShell/platform/android/resources/strings/zh-cn/.svn (Is a directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.uc.browser.resource.parse.StringParser.parse(StringParser.java:37)
+	at com.uc.browser.resource.parse.LanguageResource.buildResource(LanguageResource.java:60)
+	at com.uc.browser.resource.parse.ResourcePackager.parseDir(ResourcePackager.java:188)
+	at com.uc.browser.resource.parse.ResourcePackager.packageResource(ResourcePackager.java:256)
+	at com.uc.UCResourceCompiler.main(UCResourceCompiler.java:123)
+打包结束
+
+###############################
+#  Finish Copying resources.  #
+###############################
+
+Start compiling and pack apk with ant.
+Sun Mar  9 23:20:10 CST 2014
+Buildfile: /home/uc/work/9.7.0/BrowserShell/platform/android/build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is proguard.cfg
+     [echo] Proguard.config is enabled
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21
+ [checkenv] Installed at /opt/android-sdk-linux
+
+-setup:
+     [echo] Project Name: UCMobile
+  [gettype] Project Type: Application
+
+-build-setup:
+     [echo] Resolving Build Target for UCMobile...
+[gettarget] Project Target:   Android 2.2
+[gettarget] API level:        8
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /home/uc/work/9.7.0/BrowserShell/platform/android/bin
+    [mkdir] Created dir: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res
+    [mkdir] Created dir: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/classes
+    [mkdir] Created dir: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for UCMobile...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+   [subant] No sub-builds to iterate on
+
+-pre-build:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] Found 21 AIDL files.
+     [aidl] Compiling 21 AIDL files.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1920 source files to /home/uc/work/9.7.0/BrowserShell/platform/android/bin/classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+-post-compile:
+
+-obfuscate:
+    [mkdir] Created dir: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard
+      [jar] Building jar: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/original.jar
+ [proguard] ProGuard, version 4.7
+ [proguard] Reading input...
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/original.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/mobile_sp.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/uillib.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/GoogleAnalytics.jar]
+ [proguard] Reading program jar [/opt/android-sdk-linux/tools/support/annotations.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/animation.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/core.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/resmanager.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/libammsdk.jar]
+ [proguard] Reading program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/MapApiLocation.jar]
+ [proguard] Reading library jar [/opt/android-sdk-linux/platforms/android-8/android.jar]
+ [proguard] Initializing...
+ [proguard] Note: com.UCMobile.Network.NetworkInfoCore: can't find dynamically referenced class android.provider.Settings$Global
+ [proguard] Note: com.UCMobile.camera.Util: can't find dynamically referenced class android.hardware.Camera$CameraInfo
+ [proguard] Note: com.UCMobile.webkit.BrowserFrame: can't find dynamically referenced class android.view.ViewRootImpl
+ [proguard] Note: com.UCMobile.webkit.helper.CanvasHelper: can't find dynamically referenced class android.view.HardwareCanvas
+ [proguard] Note: com.UCMobile.webkit.helper.ContextHelper: can't find dynamically referenced class android.content.ComponentCallbacks2
+ [proguard] Note: com.UCMobile.webkit.helper.TraceHelper: can't find dynamically referenced class android.os.Trace
+ [proguard] Note: com.UCMobile.webkit.helper.ViewRootHelper: can't find dynamically referenced class android.view.ViewRootImpl
+ [proguard] Note: com.google.android.apps.analytics.AdHitIdGenerator: can't find dynamically referenced class com.google.ads.AdRequest
+ [proguard] Note: com.tencent.mm.sdk.platformtools.NetStatusUtil: can't find dynamically referenced class android.net.NetworkPolicyManager
+ [proguard] Note: com.uc.browser.DownloadUtil: can't find dynamically referenced class android.app.DownloadManager$Request
+ [proguard] Note: com.uc.browser.DownloadUtil: can't find dynamically referenced class android.app.DownloadManager
+ [proguard] Note: com.uc.browser.cameraengine.UcCamera$EventDispatcher: can't find dynamically referenced class android.hardware.Camera$CameraInfo
+ [proguard] Note: com.uc.util.ReflectionHelper: can't find dynamically referenced class android.os.StrictMode
+ [proguard] Note: com.uc.util.SystemUtilImpl: can't find dynamically referenced class android.view.DisplayList
+ [proguard] Note: the configuration refers to the unknown class 'com.uc.widget.ImageViewEx'
+ [proguard] Note: the configuration refers to the unknown class 'com.uc.browser.download.DownloadTaskInfo'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.jnibridge.EventDispatcherBridge { EventDispatcherBridge(com.uc.data.service.NativeEventDispatcher); }', but not the descriptor class 'com.uc.data.service.NativeEventDispatcher'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.jnibridge.JNIProxy { void notify(com.uc.framework.Notification); }', but not the descriptor class 'com.uc.framework.Notification'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.jnibridge.PlatformInfoBridge { PlatformInfoBridge(com.UCMobile.platforminfo.PlatformInfoImpl); }', but not the descriptor class 'com.UCMobile.platforminfo.PlatformInfoImpl'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.model.CoreDataUploadService { void save(com.UCMobile.business.stat.core2shell.Core2ShellData); }', but not the descriptor class 'com.UCMobile.business.stat.core2shell.Core2ShellData'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.model.CoreDataUploadService { com.UCMobile.business.stat.core2shell.Core2ShellData getCore2ShellData(com.UCMobile.business.stat.core2shell.Core2ShellData$Type,java.lang.String); }', but not the descriptor class 'com.UCMobile.business.stat.core2shell.Core2ShellData$Type'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.model.QuickModeSettingMgr { void notify(com.uc.framework.Notification); }', but not the descriptor class 'com.uc.framework.Notification'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.model.TrafficStats { void addTrafficItem(com.UCMobile.model.TrafficStats$TrafficItem); }', but not the descriptor class 'com.UCMobile.model.TrafficStats$TrafficItem'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.model.TrafficStats { void moveToRiskTrafficItems(com.UCMobile.model.TrafficStats$TrafficItem); }', but not the descriptor class 'com.UCMobile.model.TrafficStats$TrafficItem'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.service.ServiceController { void notify(com.uc.framework.Notification); }', but not the descriptor class 'com.uc.framework.Notification'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.ViewManager$ChildView { ViewManager$ChildView(com.UCMobile.webkit.ViewManager); }', but not the descriptor class 'com.UCMobile.webkit.ViewManager'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setDefaultZoom(com.UCMobile.webkit.WebSettings$ZoomDensity); }', but not the descriptor class 'com.UCMobile.webkit.WebSettings$ZoomDensity'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setRenderPriority(com.UCMobile.webkit.WebSettings$RenderPriority); }', but not the descriptor class 'com.UCMobile.webkit.WebSettings$RenderPriority'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setAccessControl(com.UCMobile.interfaces.IAccessControl); }', but not the descriptor class 'com.UCMobile.interfaces.IAccessControl'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setServerInfo(com.UCMobile.interfaces.IUcServerInfo); }', but not the descriptor class 'com.UCMobile.interfaces.IUcServerInfo'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setPlatformInfo(com.UCMobile.interfaces.IPlatformInfo); }', but not the descriptor class 'com.UCMobile.interfaces.IPlatformInfo'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setSystemInfo(com.UCMobile.interfaces.ISystemInfo); }', but not the descriptor class 'com.UCMobile.interfaces.ISystemInfo'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { void setUserAgent(com.UCMobile.interfaces.IUserAgent); }', but not the descriptor class 'com.UCMobile.interfaces.IUserAgent'
+ [proguard] Note: the configuration keeps the entry point 'com.UCMobile.webkit.WebSettings { boolean setRenderPriorityImediatly(com.UCMobile.webkit.WebSettings$RenderPriority); }', but not the descriptor class 'com.UCMobile.webkit.WebSettings$RenderPriority'
+ [proguard] Note: the configuration keeps the entry point 'com.tencent.mm.sdk.openapi.WXMediaMessage { WXMediaMessage(com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject); }', but not the descriptor class 'com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.addon.adapter.AddonJSObject { void setAddonJSObjectDelegate(com.uc.addon.adapter.AddonJSObjectDelegate); }', but not the descriptor class 'com.uc.addon.adapter.AddonJSObjectDelegate'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.addon.sdk.remote.protocol.DownloadTaskStatusChangeListener { void onStatusChange(int,com.uc.addon.sdk.remote.DownloadTask); }', but not the descriptor class 'com.uc.addon.sdk.remote.DownloadTask'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.addon.sdk.remote.protocol.DownloadTaskStatusChangeListener$1 { DownloadTaskStatusChangeListener$1(com.uc.addon.sdk.remote.protocol.DownloadTaskStatusChangeListener,int,com.uc.addon.sdk.remote.DownloadTaskArg); }', but not the descriptor class 'com.uc.addon.sdk.remote.DownloadTaskArg'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.history.HistoryListItem$ClickRightIconListener { void onClick(com.uc.browser.history.HistoryListItem); }', but not the descriptor class 'com.uc.browser.history.HistoryListItem'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.history.HistoryView { void onClick(com.uc.browser.history.HistoryListItem); }', but not the descriptor class 'com.uc.browser.history.HistoryListItem'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.history.HistoryWindow { void onClick(com.uc.browser.history.HistoryListItem); }', but not the descriptor class 'com.uc.browser.history.HistoryListItem'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.homepage.AppCenterRecord { void setMsgDisplayType(com.uc.browser.homepage.AppCenterRecord$MsgDisplayType); }', but not the descriptor class 'com.uc.browser.homepage.AppCenterRecord$MsgDisplayType'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.homepage.AppCenterRecord { void setDataObserver(com.uc.browser.homepage.AppCenterRecord$RecordDataObserver); }', but not the descriptor class 'com.uc.browser.homepage.AppCenterRecord$RecordDataObserver'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.homepage.AppCenterRecord { void removeDataObserver(com.uc.browser.homepage.AppCenterRecord$RecordDataObserver); }', but not the descriptor class 'com.uc.browser.homepage.AppCenterRecord$RecordDataObserver'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.homepage.AppCenterRecord { java.lang.ref.WeakReference findRecordDataObserver(com.uc.browser.homepage.AppCenterRecord$RecordDataObserver); }', but not the descriptor class 'com.uc.browser.homepage.AppCenterRecord$RecordDataObserver'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.homepage.NavigationListAdapter { void onClick(com.uc.browser.homepage.IFoldingBar); }', but not the descriptor class 'com.uc.browser.homepage.IFoldingBar'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.homepage.OnFoldingBarClickListener { void onClick(com.uc.browser.homepage.IFoldingBar); }', but not the descriptor class 'com.uc.browser.homepage.IFoldingBar'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.userguide.introanimation.IntroStage$1 { void onClick(com.uc.browser.userguide.introanimation.actor.ActorButton); }', but not the descriptor class 'com.uc.browser.userguide.introanimation.actor.ActorButton'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.browser.userguide.introanimation.actor.ActorButton$ActorButtonClickListener { void onClick(com.uc.browser.userguide.introanimation.actor.ActorButton); }', but not the descriptor class 'com.uc.browser.userguide.introanimation.actor.ActorButton'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.customview.BaseAnimation { void updatePivotPoint(com.uc.customview.BaseAnimation$PivotPoint); }', but not the descriptor class 'com.uc.customview.BaseAnimation$PivotPoint'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.customview.BaseAnimation { void setPivotPoint(com.uc.customview.BaseAnimation$PivotPoint); }', but not the descriptor class 'com.uc.customview.BaseAnimation$PivotPoint'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.customview.BaseView { void setAdapterCallback(com.uc.customview.BaseView$AdapterCallback); }', but not the descriptor class 'com.uc.customview.BaseView$AdapterCallback'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.customview.BaseView { void setClickListener(com.uc.customview.BaseView$ClickListener); }', but not the descriptor class 'com.uc.customview.BaseView$ClickListener'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.customview.BaseView { void setLongClickListener(com.uc.customview.BaseView$LongClickListener); }', but not the descriptor class 'com.uc.customview.BaseView$LongClickListener'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.customview.BaseView { void updatePivotPoint(com.uc.customview.BaseAnimation$PivotPoint); }', but not the descriptor class 'com.uc.customview.BaseAnimation$PivotPoint'
+ [proguard] Note: the configuration keeps the entry point 'com.uc.framework.AbstractController { void notify(com.uc.framework.Notification); }', but not the descriptor class 'com.uc.framework.Notification'
+ [proguard] Note: there were 2 references to unknown classes.
+ [proguard]       You should check your configuration for typos.
+ [proguard] Note: there were 40 unkept descriptor classes in kept class members.
+ [proguard]       You should consider explicitly keeping the mentioned classes
+ [proguard]       (using '-keep').
+ [proguard] Note: there were 14 unresolved dynamic references to classes or interfaces.
+ [proguard]       You should check if you need to specify additional program jars.
+ [proguard] Ignoring unused library classes...
+ [proguard]   Original number of library classes: 6755
+ [proguard]   Final number of library classes:    1403
+ [proguard] Printing kept classes, fields, and methods...
+ [proguard] Shrinking...
+ [proguard] Printing usage to [/home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/usage.txt]...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 5495
+ [proguard]   Final number of program classes:    5002
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 3048
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                1442
+ [proguard]   Number of staticized methods:                1314
+ [proguard]   Number of finalized methods:                 15394
+ [proguard]   Number of removed method parameters:         995
+ [proguard]   Number of inlined constant parameters:       498
+ [proguard]   Number of inlined constant return values:    150
+ [proguard]   Number of inlined short method calls:        1861
+ [proguard]   Number of inlined unique method calls:       4922
+ [proguard]   Number of inlined tail recursion calls:      4
+ [proguard]   Number of merged code blocks:                204
+ [proguard]   Number of variable peephole optimizations:   19262
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       141
+ [proguard]   Number of field peephole optimizations:      109
+ [proguard]   Number of branch peephole optimizations:     11447
+ [proguard]   Number of string peephole optimizations:     1805
+ [proguard]   Number of simplified instructions:           1928
+ [proguard]   Number of removed instructions:              15729
+ [proguard]   Number of removed local variables:           2251
+ [proguard]   Number of removed exception blocks:          823
+ [proguard]   Number of optimized local variable frames:   7650
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 5002
+ [proguard]   Final number of program classes:    4914
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                2
+ [proguard]   Number of staticized methods:                104
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         984
+ [proguard]   Number of inlined constant parameters:       449
+ [proguard]   Number of inlined constant return values:    199
+ [proguard]   Number of inlined short method calls:        50
+ [proguard]   Number of inlined unique method calls:       57
+ [proguard]   Number of inlined tail recursion calls:      3
+ [proguard]   Number of merged code blocks:                12
+ [proguard]   Number of variable peephole optimizations:   1963
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      1
+ [proguard]   Number of branch peephole optimizations:     625
+ [proguard]   Number of string peephole optimizations:     52
+ [proguard]   Number of simplified instructions:           730
+ [proguard]   Number of removed instructions:              11048
+ [proguard]   Number of removed local variables:           484
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   246
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 4914
+ [proguard]   Final number of program classes:    4910
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                41
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         180
+ [proguard]   Number of inlined constant parameters:       82
+ [proguard]   Number of inlined constant return values:    204
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       1
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   242
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     12
+ [proguard]   Number of string peephole optimizations:     7
+ [proguard]   Number of simplified instructions:           51
+ [proguard]   Number of removed instructions:              922
+ [proguard]   Number of removed local variables:           36
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   12
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 4910
+ [proguard]   Final number of program classes:    4910
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                16
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         22
+ [proguard]   Number of inlined constant parameters:       21
+ [proguard]   Number of inlined constant return values:    200
+ [proguard]   Number of inlined short method calls:        4
+ [proguard]   Number of inlined unique method calls:       0
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   68
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           9
+ [proguard]   Number of removed instructions:              106
+ [proguard]   Number of removed local variables:           11
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   5
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 4910
+ [proguard]   Final number of program classes:    4910
+ [proguard] Optimizing...
+ [proguard]   Number of finalized classes:                 0
+ [proguard]   Number of vertically merged classes:         0   (disabled)
+ [proguard]   Number of horizontally merged classes:       0   (disabled)
+ [proguard]   Number of removed write-only fields:         0   (disabled)
+ [proguard]   Number of privatized fields:                 0   (disabled)
+ [proguard]   Number of inlined constant fields:           0   (disabled)
+ [proguard]   Number of privatized methods:                0
+ [proguard]   Number of staticized methods:                2
+ [proguard]   Number of finalized methods:                 0
+ [proguard]   Number of removed method parameters:         15
+ [proguard]   Number of inlined constant parameters:       12
+ [proguard]   Number of inlined constant return values:    200
+ [proguard]   Number of inlined short method calls:        0
+ [proguard]   Number of inlined unique method calls:       1
+ [proguard]   Number of inlined tail recursion calls:      0
+ [proguard]   Number of merged code blocks:                0
+ [proguard]   Number of variable peephole optimizations:   25
+ [proguard]   Number of arithmetic peephole optimizations: 0   (disabled)
+ [proguard]   Number of cast peephole optimizations:       0
+ [proguard]   Number of field peephole optimizations:      0
+ [proguard]   Number of branch peephole optimizations:     0
+ [proguard]   Number of string peephole optimizations:     0
+ [proguard]   Number of simplified instructions:           4
+ [proguard]   Number of removed instructions:              10
+ [proguard]   Number of removed local variables:           2
+ [proguard]   Number of removed exception blocks:          0
+ [proguard]   Number of optimized local variable frames:   2
+ [proguard] Shrinking...
+ [proguard] Removing unused program classes and class elements...
+ [proguard]   Original number of program classes: 4910
+ [proguard]   Final number of program classes:    4910
+ [proguard] Obfuscating...
+ [proguard] Printing mapping to [/home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/mapping.txt]...
+ [proguard] Writing output...
+ [proguard] Preparing output jar [/home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/obfuscated.jar]
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/original.jar]
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/mobile_sp.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [mobile_sp.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/uillib.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [uillib.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/GoogleAnalytics.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [GoogleAnalytics.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/opt/android-sdk-linux/tools/support/annotations.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [annotations.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/animation.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [animation.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/core.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [core.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/resmanager.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [resmanager.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/libammsdk.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [libammsdk.jar:META-INF/MANIFEST.MF])
+ [proguard]   Copying resources from program jar [/home/uc/work/9.7.0/BrowserShell/platform/android/libs/MapApiLocation.jar]
+ [proguard] Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [MapApiLocation.jar:META-INF/MANIFEST.MF])
+ [proguard] Printing classes to [/home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/dump.txt]...
+
+-dex:
+      [dex] input: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/proguard/obfuscated.jar
+      [dex] Converting compiled files and external libraries into /home/uc/work/9.7.0/BrowserShell/platform/android/bin/classes.dex...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /home/uc/work/9.7.0/BrowserShell/platform/android/res
+   [crunch] To destination dir: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/appnotification_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/appnotification_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/appnotification_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_cancel_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_cancel_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_cancel_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_cancel_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_cancel_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_cancel_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_frame.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_frame.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_frame.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_laser_line.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_laser_line.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_laser_line.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_local_pic_bg_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_local_pic_bg_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_local_pic_bg_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_local_pic_bg_pressed.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_local_pic_bg_pressed.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_local_pic_bg_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_shortcut.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_shortcut.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_shortcut.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_torch_off.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_torch_off.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_torch_off.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/barcode_torch_on.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_torch_on.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/barcode_torch_on.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bcmsg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bcmsg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bcmsg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/btn_check_off.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/btn_check_off.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/btn_check_off.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_add_thumbview_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_add_thumbview_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_add_thumbview_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_add_thumbview_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_add_thumbview_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_add_thumbview_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_common_btn_bg_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_common_btn_bg_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_common_btn_bg_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_common_btn_bg_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_common_btn_bg_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_common_btn_bg_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_del_btn_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_del_btn_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_del_btn_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_del_input.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_del_input.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_del_input.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_disable_commit_btn_bg_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_disable_commit_btn_bg_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_disable_commit_btn_bg_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_disable_commit_btn_bg_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_disable_commit_btn_bg_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_disable_commit_btn_bg_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_enable_commit_btn_bg_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_enable_commit_btn_bg_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_enable_commit_btn_bg_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_enable_commit_btn_bg_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_enable_commit_btn_bg_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_enable_commit_btn_bg_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_icon_all_move.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_icon_all_move.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_icon_all_move.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_icon_half_left.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_icon_half_left.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_icon_half_left.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_icon_half_right.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_icon_half_right.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_icon_half_right.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_loading.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_loading.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_loading.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_play.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_play.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_play.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_record.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_record.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_record.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_record_btn_bg_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_record_btn_bg_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_record_btn_bg_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_record_btn_bg_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_record_btn_bg_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_record_btn_bg_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_reset_btn_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_reset_btn_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_reset_btn_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_reset_btn_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_reset_btn_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_reset_btn_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_screenshot.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_screenshot.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_screenshot.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_thumbview_del_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_thumbview_del_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_thumbview_del_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_thumbview_del_press.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_thumbview_del_press.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_thumbview_del_press.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_titlebar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_titlebar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_titlebar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_toolbar_bg_new.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_toolbar_bg_new.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_toolbar_bg_new.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/bugs_report_voice_pause.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_voice_pause.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/bugs_report_voice_pause.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/call_master.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/call_master.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/call_master.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_cancel_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_cancel_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_cancel_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_cancel_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_cancel_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_cancel_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_capture_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_capture_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_capture_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_capture_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_capture_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_capture_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_confirm_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_confirm_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_confirm_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_confirm_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_confirm_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_confirm_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_crop_height.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_crop_height.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_crop_height.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/camera_crop_width.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_crop_width.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/camera_crop_width.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/capture_window_drag.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/capture_window_drag.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/capture_window_drag.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/capture_window_toolbar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/capture_window_toolbar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/capture_window_toolbar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/danxuan_nor.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/danxuan_nor.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/danxuan_nor.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/danxuan_select.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/danxuan_select.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/danxuan_select.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/def_bg_msg_large_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/def_bg_msg_large_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/def_bg_msg_large_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/def_bg_msg_small_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/def_bg_msg_small_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/def_bg_msg_small_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/default_ptr_flip.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/default_ptr_flip.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/default_ptr_flip.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/default_ptr_rotate.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/default_ptr_rotate.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/default_ptr_rotate.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/default_video_poster.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/default_video_poster.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/default_video_poster.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_circle.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_circle.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_circle.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_download_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_download_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_download_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_download_reverse_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_download_reverse_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_download_reverse_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_facebook_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_facebook_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_facebook_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_facebook_reverse_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_facebook_reverse_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_facebook_reverse_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_click_fade1.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade1.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade1.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_click_fade2.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade2.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade2.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_click_fade3.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade3.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade3.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_click_fade4.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade4.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade4.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_click_fade5.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade5.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade5.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_click_fade6.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade6.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_click_fade6.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_icon_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_icon_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_nav_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_nav_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_nav_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_nav_reverse_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_nav_reverse_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_nav_reverse_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_pie_item_bg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_bg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_pie_item_bg_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_bg_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_bg_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_pie_item_cn_bg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_cn_bg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_cn_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_pie_item_cn_bg_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_cn_bg_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_pie_item_cn_bg_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_search_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_search_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_search_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_setting_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_setting_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_setting_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_speed_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_speed_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_speed_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/desktop_float_speed_reverse_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_speed_reverse_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/desktop_float_speed_reverse_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/devnotification_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/devnotification_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/devnotification_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_background.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_background.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_background.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_downloading.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_downloading.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_downloading.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo1.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo1.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo1.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo2.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo2.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo2.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo3.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo3.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo3.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo4.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo4.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo4.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo5.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo5.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo5.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo6.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo6.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo6.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo7.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo7.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo7.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/dl_progressbar_indeterminate_holo8.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo8.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/dl_progressbar_indeterminate_holo8.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/download_oprator_btn_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/download_oprator_btn_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/download_oprator_btn_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/download_oprator_btn_pressed.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/download_oprator_btn_pressed.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/download_oprator_btn_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_apk.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_apk.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_apk.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_audio.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_audio.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_audio.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_compressfile.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_compressfile.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_compressfile.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_document.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_document.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_document.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_image.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_image.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_image.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_pdf.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_pdf.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_pdf.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_skin.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_skin.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_skin.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_video.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_video.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_video.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/fileicon_webpage.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_webpage.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/fileicon_webpage.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/icon_download.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/icon_download.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/icon_download.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/icon_pause.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/icon_pause.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/icon_pause.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/intl_camera_cancel_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_cancel_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_cancel_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/intl_camera_cancel_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_cancel_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_cancel_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/intl_camera_capture_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_capture_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_capture_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/intl_camera_capture_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_capture_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_capture_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/intl_camera_confirm_default.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_confirm_default.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_confirm_default.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/intl_camera_confirm_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_confirm_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/intl_camera_confirm_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/license_check.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/license_check.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/license_check.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/license_uncheck.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/license_uncheck.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/license_uncheck.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/licenseview_button_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/licenseview_button_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/licenseview_button_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/licenseview_button_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/licenseview_button_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/licenseview_button_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_addfav_button_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_addfav_button_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_addfav_button_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_addfav_button_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_addfav_button_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_addfav_button_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_control_play_next_episode_area_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_control_play_next_episode_area_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_control_play_next_episode_area_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_control_play_next_episode_button_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_control_play_next_episode_button_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_control_play_next_episode_button_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_control_play_next_episode_button_selected.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_control_play_next_episode_button_selected.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_control_play_next_episode_button_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_download_ac_button_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_ac_button_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_ac_button_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_download_ac_button_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_ac_button_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_ac_button_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_download_button_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_button_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_button_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_download_button_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_button_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_download_button_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_fullscreen_ac_button_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_fullscreen_ac_button_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_fullscreen_ac_button_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_fullscreen_ac_button_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_fullscreen_ac_button_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_fullscreen_ac_button_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_hint_area_backward.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_hint_area_backward.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_hint_area_backward.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_hint_area_forward.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_hint_area_forward.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_hint_area_forward.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_hint_area_volumn.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_hint_area_volumn.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_hint_area_volumn.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_image_video_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_image_video_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_image_video_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_share_button_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_share_button_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_share_button_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/media_share_button_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_share_button_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/media_share_button_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/menu_submenu_background.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/menu_submenu_background.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/menu_submenu_background.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_action_button_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_action_button_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_action_button_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_action_button_pressed.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_action_button_pressed.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_action_button_pressed.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dled.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dled.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dled.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dlerror.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dlerror.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dlerror.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling1.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling1.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling1.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling2.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling2.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling2.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling3.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling3.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling3.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling4.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling4.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling4.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling5.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling5.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling5.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling6.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling6.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling6.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling7.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling7.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling7.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling8.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling8.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling8.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dling9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dling9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dlpause.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dlpause.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dlpause.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_dlretry.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dlretry.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_dlretry.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_download_type_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_download_type_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_download_type_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_panel_dlerror.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlerror.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlerror.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_panel_dlfinish.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlfinish.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlfinish.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_panel_dling.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dling.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dling.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_panel_dlpause.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlpause.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlpause.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_panel_dlretry.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlretry.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_panel_dlretry.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_preview.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_preview.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_preview.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_progress.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_progress.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_progress.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/notification_progress_bg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_progress_bg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/notification_progress_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/onecode_entry_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/onecode_entry_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/onecode_entry_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/onecode_entry_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/onecode_entry_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/onecode_entry_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/openwifi_bcmsg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/openwifi_bcmsg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/openwifi_bcmsg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/openwifi_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/openwifi_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/openwifi_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_pen.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_pen.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_pen.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_pen_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_pen_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_pen_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_titlebar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_titlebar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_titlebar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_tools_eraser.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_eraser.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_eraser.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_tools_eraser_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_eraser_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_eraser_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_tools_undo.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_undo.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_undo.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_tools_undo_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_undo_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_tools_undo_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettify_window_bottom_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_window_bottom_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettify_window_bottom_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/prettywindow_toolbar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettywindow_toolbar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/prettywindow_toolbar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo1.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo1.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo1.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo2.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo2.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo2.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo3.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo3.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo3.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo4.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo4.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo4.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo5.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo5.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo5.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo6.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo6.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo6.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo7.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo7.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo7.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/progressbar_indeterminate_holo8.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo8.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/progressbar_indeterminate_holo8.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/qrcode_entry_normal.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/qrcode_entry_normal.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/qrcode_entry_normal.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/qrcode_entry_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/qrcode_entry_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/qrcode_entry_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/resolution_indicator.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/resolution_indicator.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/resolution_indicator.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/scrollbar_handle_accelerated_anim2.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/scrollbar_handle_accelerated_anim2.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/scrollbar_handle_accelerated_anim2.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/security_type_safe.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/security_type_safe.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/security_type_safe.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/seekbar_no_progress.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_no_progress.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_no_progress.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/seekbar_scrubber_background.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_background.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_background.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/seekbar_scrubber_control_disabled.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_control_disabled.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_control_disabled.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/seekbar_scrubber_control_focused.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_control_focused.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_control_focused.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/seekbar_scrubber_control_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_control_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_control_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/seekbar_scrubber_primary.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_primary.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/seekbar_scrubber_primary.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/settingwidget_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/settingwidget_close.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_close.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_close.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/settingwidget_close_pressed_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_close_pressed_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_close_pressed_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/settingwidget_color_picker_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_color_picker_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_color_picker_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/settingwidget_preview_bg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_preview_bg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_preview_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/settingwidget_seekbar_btn.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_seekbar_btn.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/settingwidget_seekbar_btn.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/uc_widget_container_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_container_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_container_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/uc_widget_search_icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_search_icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_search_icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/uc_widget_searchbar_bg_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_searchbar_bg_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_searchbar_bg_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/uc_widget_splite_line.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_splite_line.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_splite_line.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-hdpi/uc_widget_urlbar_bg_press.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_urlbar_bg_press.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-hdpi/uc_widget_urlbar_bg_press.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/capture_window_drag.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/capture_window_drag.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/capture_window_drag.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/capture_window_toolbar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/capture_window_toolbar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/capture_window_toolbar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/prettify_pen.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_pen.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_pen.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/prettify_pen_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_pen_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_pen_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/prettify_tools_eraser.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_eraser.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_eraser.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/prettify_tools_eraser_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_eraser_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_eraser_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/prettify_tools_undo.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_undo.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_undo.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/prettify_tools_undo_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_undo_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/prettify_tools_undo_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/settingwidget_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/settingwidget_close.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_close.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_close.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/settingwidget_close_pressed_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_close_pressed_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_close_pressed_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/settingwidget_color_picker_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_color_picker_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_color_picker_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/settingwidget_preview_bg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_preview_bg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_preview_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-ldpi/settingwidget_seekbar_btn.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_seekbar_btn.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-ldpi/settingwidget_seekbar_btn.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/barcode_shortcut.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/barcode_shortcut.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/barcode_shortcut.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/btn_check_off.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/btn_check_off.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/btn_check_off.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/capture_window_drag.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/capture_window_drag.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/capture_window_drag.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/capture_window_toolbar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/capture_window_toolbar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/capture_window_toolbar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/prettify_pen.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_pen.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_pen.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/prettify_pen_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_pen_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_pen_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/prettify_tools_eraser.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_eraser.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_eraser.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/prettify_tools_eraser_selected.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_eraser_selected.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_eraser_selected.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/prettify_tools_undo.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_undo.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_undo.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/prettify_tools_undo_pressed.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_undo_pressed.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/prettify_tools_undo_pressed.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/settingwidget_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/settingwidget_close.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_close.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_close.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/settingwidget_close_pressed_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_close_pressed_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_close_pressed_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/settingwidget_color_picker_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_color_picker_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_color_picker_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/settingwidget_preview_bg.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_preview_bg.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_preview_bg.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-mdpi/settingwidget_seekbar_btn.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_seekbar_btn.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-mdpi/settingwidget_seekbar_btn.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-xhdpi/barcode_shortcut.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-xhdpi/barcode_shortcut.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-xhdpi/barcode_shortcut.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable-xhdpi/icon.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-xhdpi/icon.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable-xhdpi/icon.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable/media_banner_button_normal.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/media_banner_button_normal.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/media_banner_button_normal.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable/media_banner_button_selected.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/media_banner_button_selected.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/media_banner_button_selected.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable/media_banner_hint.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/media_banner_hint.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/media_banner_hint.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable/settingwidget_seekbar_bg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/settingwidget_seekbar_bg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/settingwidget_seekbar_bg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable/settingwidget_seekbar_fg.9.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/settingwidget_seekbar_fg.9.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/settingwidget_seekbar_fg.9.png: 0% size of source)
+   [crunch] Processing image to cache: /home/uc/work/9.7.0/BrowserShell/platform/android/res/drawable/videoplayer_loading.png => /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/videoplayer_loading.png
+   [crunch]   (processed image to cache entry /home/uc/work/9.7.0/BrowserShell/platform/android/bin/res/drawable/videoplayer_loading.png: 0% size of source)
+   [crunch] Crunched 239 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating UCMobile-release-unsigned.apk for release...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] No key.store and key.alias properties found in build.properties.
+     [echo] Please sign /home/uc/work/9.7.0/BrowserShell/platform/android/bin/UCMobile-release-unsigned.apk manually
+     [echo] and run zipalign from the Android SDK tools.
+[propertyfile] Creating new property file: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/build.prop
+[propertyfile] Updating property file: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/build.prop
+[propertyfile] Updating property file: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/build.prop
+[propertyfile] Updating property file: /home/uc/work/9.7.0/BrowserShell/platform/android/bin/build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+BUILD SUCCESSFUL
+Total time: 3 minutes 12 seconds
+./bin/UCMobile-release-unsigned.apk
+./bin/UCMobile.apk
+./android.keystore
+signed ./bin/UCMobile-release-unsigned.apk to ./bin/UCMobile.apk
+platform: Linux
+ucsignapk: ucsignapk
+chmod ok!
+./bin/UCMobile-release-unsigned.apk
+begin call /home/uc/work/9.7.0/BrowserShell/platform/android/build_scripts/ucsignapk
+./bin/UCMobile.apk
+end
+
+#####################################################################
+#                              Pack done.                           #
+#####################################################################
+
+Sun Mar  9 23:23:25 CST 2014
+
+Total Time  : 4 minutes, 36 seconds
