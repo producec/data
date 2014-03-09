@@ -1,0 +1,12 @@
+Index: core/WebCore/loader/FrameLoader.cpp
+===================================================================
+--- core/WebCore/loader/FrameLoader.cpp	(revision 10711)
++++ core/WebCore/loader/FrameLoader.cpp	(working copy)
+@@ -32,6 +32,7 @@
+  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  */
+ 
++
+ #include "config.h"
+ #include "FrameLoader.h"
+ 
