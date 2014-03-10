@@ -1,0 +1,8 @@
+# Change this to 'yes' if you want to run as a dmucs server.
+# Normally only one host a given network need act as a server.
+SERVER=no
+
+# If you want this machine to act as a complition server edit
+# the line below and set USE_SERVER to the name of the dmucs
+# server on your network.
+USE_SERVER=192.168.1.105
