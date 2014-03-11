@@ -109,9 +109,11 @@ fi
 #export ANDROID_NDK=/opt/android-ndk-r8 #以后想换ndk版本的时候只要改这个环境变量即可
 #export NDK_TOOLCHAIN=arm-linux-androideabi-4.7.2
 export USE_CCACHE=1
-export NDK_CCACHE=ccache
-export CCACHE_PREFIX=distcc
-export DISTCC_HOSTS="localhost/7,lzo 192.168.1.100/10,lzo 192.168.1.101/10,lzo 192.168.1.105/10,lzo" #这个是你要使用的distcc服务器地址列表
+export NDK_CCACHE='gethost --server 192.168.1.105 ccache'
+#export NDK_CCACHE='ccache'
+export CCACHE_PREFIX='distcc'
+export DISTCC_HOSTS="192.168.1.100 192.168.1.101 192.168.1.105" #这个是你要使用的distcc服务器地址列表
+#export DISTCC_VERBOSE=1
 #export DISTCC_HOSTS="localhost/7,lzo,cpp 192.168.1.100" #这个是你要使用的distcc服务器地址列表
 export PATH=$PATH:$ANDROID_NDK
 export CCACHE_DIR=~/.ccache
