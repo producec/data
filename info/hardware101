@@ -1,0 +1,338 @@
+test-101
+    description: Desktop Computer
+    product: To be filled by O.E.M. (To be filled by O.E.M.)
+    vendor: Gigabyte Technology Co., Ltd.
+    version: To be filled by O.E.M.
+    serial: To be filled by O.E.M.
+    width: 64 bits
+    capabilities: smbios-2.7 dmi-2.7 vsyscall32
+    configuration: boot=normal chassis=desktop family=To be filled by O.E.M. sku=To be filled by O.E.M. uuid=90022B03-3404-6A05-1C06-A30700080009
+  *-core
+       description: Motherboard
+       product: H77-DS3H
+       vendor: Gigabyte Technology Co., Ltd.
+       physical id: 0
+       version: To be filled by O.E.M.
+       serial: To be filled by O.E.M.
+       slot: To be filled by O.E.M.
+     *-firmware
+          description: BIOS
+          vendor: American Megatrends Inc.
+          physical id: 0
+          version: F5
+          date: 05/14/2012
+          size: 64KiB
+          capacity: 8128KiB
+          capabilities: pci upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb biosbootspecification
+     *-cache:0
+          description: L1 cache
+          physical id: 4
+          slot: CPU Internal L1
+          size: 128KiB
+          capacity: 128KiB
+          capabilities: internal write-through
+     *-cache:1
+          description: L2 cache
+          physical id: 5
+          slot: CPU Internal L2
+          size: 1MiB
+          capacity: 1MiB
+          capabilities: internal write-through instruction
+     *-cache:2
+          description: L3 cache
+          physical id: 6
+          slot: CPU Internal L3
+          size: 8MiB
+          capacity: 8MiB
+          capabilities: internal write-back instruction
+     *-memory
+          description: System Memory
+          physical id: 7
+          slot: System board or motherboard
+          size: 8GiB
+        *-bank:0
+             description: DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+             product: F3-12800CL9-4GBXL
+             vendor: Fujitsu
+             physical id: 0
+             serial: 00000000
+             slot: ChannelA-DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+        *-bank:1
+             description: DIMM [empty]
+             product: [Empty]
+             vendor: [Empty]
+             physical id: 1
+             serial: [Empty]
+             slot: ChannelA-DIMM1
+        *-bank:2
+             description: DIMM DDR3 Synchronous 1600 MHz (0.6 ns)
+             product: F3-12800CL9-4GBXL
+             vendor: Fujitsu
+             physical id: 2
+             serial: 00000000
+             slot: ChannelB-DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+        *-bank:3
+             description: DIMM [empty]
+             product: [Empty]
+             vendor: [Empty]
+             physical id: 3
+             serial: [Empty]
+             slot: ChannelB-DIMM1
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+          vendor: Intel Corp.
+          physical id: 43
+          bus info: cpu@0
+          version: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+          slot: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+          size: 1600MHz
+          capacity: 1600MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: x86-64 fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms cpufreq
+          configuration: cores=4 enabledcores=1 threads=2
+     *-pci
+          description: Host bridge
+          product: Ivy Bridge DRAM Controller
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 09
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=agpgart-intel
+          resources: irq:0
+        *-display
+             description: VGA compatible controller
+             product: Ivy Bridge Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm vga_controller bus_master cap_list rom
+             configuration: driver=i915 latency=0
+             resources: irq:45 memory:f7800000-f7bfffff memory:e0000000-efffffff ioport:f000(size=64)
+        *-usb:0
+             description: USB controller
+             product: Panther Point USB xHCI Host Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:43 memory:f7d00000-f7d0ffff
+        *-communication
+             description: Communication controller
+             product: Panther Point MEI Controller #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei latency=0
+             resources: irq:44 memory:f7d1a000-f7d1a00f
+        *-usb:1
+             description: USB controller
+             product: Panther Point USB Enhanced Host Controller #2
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci_hcd latency=0
+             resources: irq:16 memory:f7d18000-f7d183ff
+        *-multimedia
+             description: Audio device
+             product: Panther Point High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:46 memory:f7d10000-f7d13fff
+        *-pci:0
+             description: PCI bridge
+             product: Panther Point PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16
+        *-pci:1
+             description: PCI bridge
+             product: Panther Point PCI Express Root Port 3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 ioport:e000(size=4096) memory:f7c00000-f7cfffff
+           *-network
+                description: Ethernet interface
+                product: AR8151 v2.0 Gigabit Ethernet
+                vendor: Atheros Communications Inc.
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: eth0
+                version: c0
+                serial: 90:2b:34:6a:1c:a3
+                size: 100Mbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress vpd bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=atl1c driverversion=1.0.1.0-NAPI duplex=full firmware=N/A ip=192.168.1.101 latency=0 link=yes multicast=yes port=twisted pair speed=100Mbit/s
+                resources: irq:47 memory:f7c00000-f7c3ffff ioport:e000(size=128)
+        *-pci:2
+             description: PCI bridge
+             product: 82801 PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm subtractive_decode bus_master cap_list
+           *-pci
+                description: PCI bridge
+                product: 82801 PCI Bridge
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                version: 30
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pci pm subtractive_decode bus_master cap_list
+        *-usb:2
+             description: USB controller
+             product: Panther Point USB Enhanced Host Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci_hcd latency=0
+             resources: irq:23 memory:f7d17000-f7d173ff
+        *-isa
+             description: ISA bridge
+             product: Panther Point LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: latency=0
+        *-storage
+             description: SATA controller
+             product: Panther Point 6 port SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             logical name: scsi0
+             logical name: scsi1
+             version: 04
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage msi pm ahci_1.0 bus_master cap_list emulated
+             configuration: driver=ahci latency=0
+             resources: irq:42 ioport:f0b0(size=8) ioport:f0a0(size=4) ioport:f090(size=8) ioport:f080(size=4) ioport:f060(size=32) memory:f7d16000-f7d167ff
+           *-disk
+                description: ATA Disk
+                product: ST1000DM003-9YN1
+                vendor: Seagate
+                physical id: 0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/sda
+                version: CC4B
+                serial: Z1D1JLDM
+                size: 931GiB (1TB)
+                capabilities: partitioned partitioned:dos
+                configuration: ansiversion=5 signature=000d4cd8
+              *-volume:0
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 1
+                   bus info: scsi@0:0.0.0,1
+                   logical name: /dev/sda1
+                   logical name: /
+                   version: 1.0
+                   serial: 58dfc156-ee45-4501-83a9-3187bd27f9c1
+                   size: 923GiB
+                   capacity: 923GiB
+                   capabilities: primary bootable journaled extended_attributes large_files huge_files dir_nlink extents ext4 ext2 initialized
+                   configuration: created=2014-03-07 21:06:59 filesystem=ext4 lastmountpoint=/ modified=2014-03-07 21:11:34 mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro,user_xattr,barrier=1,data=ordered mounted=2014-03-08 21:37:26 state=mounted
+              *-volume:1
+                   description: Extended partition
+                   physical id: 2
+                   bus info: scsi@0:0.0.0,2
+                   logical name: /dev/sda2
+                   size: 7957MiB
+                   capacity: 7957MiB
+                   capabilities: primary extended partitioned partitioned:extended
+                 *-logicalvolume
+                      description: Linux swap / Solaris partition
+                      physical id: 5
+                      logical name: /dev/sda5
+                      capacity: 7957MiB
+                      capabilities: nofs
+           *-cdrom
+                description: DVD reader
+                product: DVD-ROM SH-118AB
+                vendor: TSSTcorp
+                physical id: 1
+                bus info: scsi@1:0.0.0
+                logical name: /dev/cdrom
+                logical name: /dev/dvd
+                logical name: /dev/sr0
+                version: CM00
+                capabilities: removable audio dvd
+                configuration: ansiversion=5 status=nodisc
+        *-serial UNCLAIMED
+             description: SMBus
+             product: Panther Point SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:f7d15000-f7d150ff ioport:f040(size=32)
+  *-power UNCLAIMED
+       description: To Be Filled By O.E.M.
+       product: To Be Filled By O.E.M.
+       vendor: To Be Filled By O.E.M.
+       physical id: 1
+       version: To Be Filled By O.E.M.
+       serial: To Be Filled By O.E.M.
+       capacity: 32768mWh
